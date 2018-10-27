@@ -1,0 +1,24 @@
+======================= WITH OUT SPRING ==============================
+
+we can create maven project.
+-Add HTTPServlet dependencies for creating servlets.
+-Servlets (piece of code running on server) are required for mapping urls with required fuctions.
+-we can extend HttpServlet and crete classes which are further included in web.xml(present in maven webproject).
+
+class xServlet extends HttpServlet{
+@Override
+protected void goGet(HttpServletRequest req,HttpServletResponse res){
+		new PrintWriter(res.getWriter()).append("Hello World!");
+	}
+}
+
+
+web.xml:
+<servlet>
+	<servlet-name>HelloWord</servlet-name>
+	<servlet-class>packagename.xServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>HelloWord</servlet-name>
+	<url-pattern>/hello</url-pattern>
+</servlet-mapping>
