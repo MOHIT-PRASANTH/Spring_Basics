@@ -18,7 +18,7 @@ ApplicationContext.xml
 </beans>
 ##########################################################################
 
-What Happends when we load applicationContext.xml file:
+What Happens when we load applicationContext.xml file:
 	The beans inside applicationContext.xml will be initiated. i.e. It intilized spring container so that beans are present inside that spring container.
 	
 With out Application Context Loader:
