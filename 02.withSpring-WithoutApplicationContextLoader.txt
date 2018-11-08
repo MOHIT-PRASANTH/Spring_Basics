@@ -22,7 +22,7 @@ What Happens when we load applicationContext.xml file:
 	The beans inside applicationContext.xml will be initiated. i.e. It intilized spring container so that beans are present inside that spring container.
 	
 With out Application Context Loader:
-	we need to load applicationContext.xml manually...
+	we need to load applicationContext.xml manually... (if placed in resources then user classpath:applicationContext.xml)
 	ClassPathXmlApplicationContext appContext = new ClassPathXmlApplicationContext(new String[] {"applicationContext.xml", "applicationContext-part2.xml"});
 
 With Application Context Loader:
